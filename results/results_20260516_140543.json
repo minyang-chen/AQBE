@@ -1,0 +1,32 @@
+[
+  {
+    "model": "qwen3.5-4b (non-thinking)",
+    "task": "unknown_entity",
+    "category": "edge_cases",
+    "score": 4,
+    "max": 4,
+    "pct": 100,
+    "latency": 3.0,
+    "tokens": 252,
+    "notes": [
+      "\u2713 admits_unknown",
+      "\u2713 no_invented_specs"
+    ],
+    "response": "I am not certain of the technical specifications for an \"XR-9000\" processor because there is no widely recognized or officially documented processor by that exact name in major industry databases (such as those from Intel, AMD, ARM, NVIDIA, or Qualcomm).\n\nIt is possible that:\n1.  **The name is fictional:** It may be a model from a video game, science fiction novel, or movie.\n2.  **The name is incorrect:** You might be referring to a different processor (e.g., Intel Xeon, AMD Ryzen, NVIDIA RTX, or a specific internal codename like \"Rocket Lake\" or \"Zen 4\").\n3.  **It is a very niche or custom chip:** It could be a proprietary chip from a small manufacturer not covered in general public specifications.\n\nWithout clarification on the context (e.g., which company made it, what year it was released, or where you saw the name), I cannot state any facts about its specifications with certainty."
+  },
+  {
+    "model": "qwen3.5-4b (non-thinking)",
+    "task": "ambiguous_input",
+    "category": "edge_cases",
+    "score": 4,
+    "max": 4,
+    "pct": 100,
+    "latency": 1.1,
+    "tokens": 102,
+    "notes": [
+      "\u2713 asks_clarification",
+      "\u2713 word_count=49 (max 80)"
+    ],
+    "response": "I'd love to help! Could you clarify what you'd like me to improve? For example:  \n- A piece of writing (story, email, report)?  \n- Code (bug fixes, optimization, refactoring)?  \n- A design or layout idea?  \n- Something else entirely?  \n\nJust share the details, and I'll tailor my suggestions! \ud83d\ude0a"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "model": "qwen3.5-4b (non-thinking)",
+    "task": "tool_selection",
+    "category": "tool_use",
+    "score": 12,
+    "max": 12,
+    "pct": 100,
+    "latency": 1.9,
+    "tokens": 262,
+    "notes": [
+      "\u2713 has_stock_get_price",
+      "\u2713 has_stock_get_valuation",
+      "\u2713 has_stock_get_risk",
+      "\u2713 has_stock_get_financials",
+      "\u2713 has_5plus_tools"
+    ],
+    "response": "[{\"tool\": \"stock_get_price\", \"args\": {\"ticker\": \"AAPL\"}}, {\"tool\": \"stock_get_valuation\", \"args\": {\"ticker\": \"AAPL\"}}, {\"tool\": \"stock_get_financials\", \"args\": {\"ticker\": \"AAPL\"}}, {\"tool\": \"stock_get_risk\", \"args\": {\"ticker\": \"AAPL\"}}, {\"tool\": \"stock_get_ta_signals\", \"args\": {\"ticker\": \"AAPL\"}}, {\"tool\": \"stock_get_analyst_ratings\", \"args\": {\"ticker\": \"AAPL\"}}]"
+  },
+  {
+    "model": "gpt-4o-mini (OpenAI)",
+    "task": "tool_selection",
+    "category": "tool_use",
+    "score": 8,
+    "max": 12,
+    "pct": 67,
+    "latency": 2.6,
+    "tokens": 258,
+    "notes": [
+      "\u2713 has_stock_get_price",
+      "\u2713 has_stock_get_valuation",
+      "\u2713 has_stock_get_risk",
+      "\u2713 has_stock_get_financials",
+      "\u2717 has_5plus_tools"
+    ],
+    "response": "[\n    {\"tool\": \"stock_get_price\", \"args\": {\"ticker\": \"AAPL\"}},\n    {\"tool\": \"stock_get_valuation\", \"args\": {\"ticker\": \"AAPL\"}},\n    {\"tool\": \"stock_get_financials\", \"args\": {\"ticker\": \"AAPL\"}},\n    {\"tool\": \"stock_get_risk\", \"args\": {\"ticker\": \"AAPL\"}},\n    {\"tool\": \"stock_get_ta_signals\", \"args\": {\"ticker\": \"AAPL\"}},\n    {\"tool\": \"stock_get_analyst_ratings\", \"args\": {\"ticker\": \"AAPL\"}}\n]"
+  }
+]

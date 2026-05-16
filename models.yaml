@@ -1,0 +1,56 @@
+# AQBE Model Registry
+# Add/remove models here without touching aqbe.py
+# Use ${ENV_VAR} syntax for secrets
+
+models:
+  small:
+    label: "qwen3.5-4b (non-thinking)"
+    url: "http://10.0.0.9:8081/v1"
+    model: "qwen3.5-4b"
+    headers:
+      Authorization: "Bearer llamacpp-key"
+    temperature: 0.1
+    max_tokens: 1024
+    timeout: 60
+
+  large:
+    label: "qwen3.6-35b-a3b"
+    url: "http://10.0.0.139:8081/v1"
+    model: "qwen3.6-35b-a3b"
+    headers:
+      Authorization: "Bearer llamacpp-key"
+    temperature: 0.1
+    max_tokens: 1024
+    timeout: 60
+    group: gpu1_large   # only one model in this group runs at a time
+
+  gemma:
+    label: "gemma-4-26b-a4b-it"
+    url: "http://10.0.0.139:8081/v1"
+    model: "gemma-4-26b-a4b-it"
+    headers:
+      Authorization: "Bearer llamacpp-key"
+    temperature: 0.1
+    max_tokens: 1024
+    timeout: 60
+    group: gpu1_large   # same server as large — runs sequentially after large completes
+
+  reasoning:
+    label: "gpt-oss-20b"
+    url: "http://10.0.0.82:8081/v1"
+    model: "gpt-oss-20b"
+    headers:
+      Authorization: "Bearer llamacpp-key"
+    temperature: 0.1
+    max_tokens: 1024
+    timeout: 60
+
+  openai:
+    label: "gpt-4o-mini (OpenAI)"
+    url: "https://api.openai.com/v1"
+    model: "gpt-4o-mini"
+    headers:
+      Authorization: "Bearer ${OPENAI_API_KEY}"
+    temperature: 0.1
+    max_tokens: 1024
+    timeout: 60
