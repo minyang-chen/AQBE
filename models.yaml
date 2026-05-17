@@ -5,7 +5,7 @@
 models:
   small:
     label: "qwen3.5-4b (non-thinking)"
-    url: "http://10.0.0.9:8081/v1"
+    url: "http://10.0.0.1:8081/v1"
     model: "qwen3.5-4b"
     headers:
       Authorization: "Bearer llamacpp-key"
@@ -15,7 +15,7 @@ models:
 
   large:
     label: "qwen3.6-35b-a3b"
-    url: "http://10.0.0.139:8081/v1"
+    url: "http://10.0.0.2:8081/v1"
     model: "qwen3.6-35b-a3b"
     headers:
       Authorization: "Bearer llamacpp-key"
@@ -26,7 +26,7 @@ models:
 
   gemma:
     label: "gemma-4-26b-a4b-it"
-    url: "http://10.0.0.139:8081/v1"
+    url: "http://10.0.0.3:8081/v1"
     model: "gemma-4-26b-a4b-it"
     headers:
       Authorization: "Bearer llamacpp-key"
@@ -37,7 +37,7 @@ models:
 
   reasoning:
     label: "gpt-oss-20b"
-    url: "http://10.0.0.82:8081/v1"
+    url: "http://10.0.0.4:8081/v1"
     model: "gpt-oss-20b"
     headers:
       Authorization: "Bearer llamacpp-key"

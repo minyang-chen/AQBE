@@ -24,7 +24,7 @@ python3 aqbe.py
 python3 aqbe.py --models models.yaml
 
 # Specific task pack
-python3 aqbe.py --tasks task_packs/financial_agentic.yaml
+python3 aqbe.py --tasks task_packs/general_agentic.yaml
 
 # Filter by category
 python3 aqbe.py --category agentic
